@@ -96,8 +96,10 @@ namespace SuperShopManagement
             this.EmployeeDGV.Location = new System.Drawing.Point(89, 280);
             this.EmployeeDGV.Name = "EmployeeDGV";
             this.EmployeeDGV.RowTemplate.Height = 25;
+            this.EmployeeDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.EmployeeDGV.Size = new System.Drawing.Size(537, 163);
             this.EmployeeDGV.TabIndex = 26;
+            this.EmployeeDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.EmployeeDGV_CellContentClick);
             // 
             // SaveBtn
             // 
@@ -121,6 +123,7 @@ namespace SuperShopManagement
             this.EditBtn.TabIndex = 24;
             this.EditBtn.Text = "Edit";
             this.EditBtn.UseVisualStyleBackColor = false;
+            this.EditBtn.Click += new System.EventHandler(this.EditBtn_Click);
             // 
             // DeleteBtn
             // 
@@ -132,6 +135,7 @@ namespace SuperShopManagement
             this.DeleteBtn.TabIndex = 23;
             this.DeleteBtn.Text = "Delete";
             this.DeleteBtn.UseVisualStyleBackColor = false;
+            this.DeleteBtn.Click += new System.EventHandler(this.DeleteBtn_Click);
             // 
             // ClearBtn
             // 
