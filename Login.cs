@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace SuperShopManagement
 {
@@ -35,6 +36,7 @@ namespace SuperShopManagement
 
         private void label4_Click(object sender, EventArgs e)
         {
+            Debug.WriteLine("Naznin");
             Employee em = new Employee();
             em.Show();
             this.Hide();
